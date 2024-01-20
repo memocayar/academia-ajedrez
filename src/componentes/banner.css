@@ -4,14 +4,14 @@
 }
 
 #textos {
-  margin-left: 15em;
-  margin-top: 10em;
+  margin-left: 5em;
+  margin-top: 2em;
 }
 
 #titulo {
   color: #000;
   font-family: "Titillium Web";
-  font-size: 120px;
+  font-size: 48px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -19,13 +19,20 @@
 }
 
 #parrafo {
-  color: #67696b;
+  color: #67696B;
   font-family: "Titillium Web";
-  font-size: 80px;
+  font-size: 32px;
   font-style: normal;
   font-weight: 400;
-  line-height: 150%; /* 150% */
+  line-height: 48px; /* 150% */
+}
+
+#contenedorImagen {
+  display: flex;
+  justify-content: end;
 }
 
 #imagen {
+width: 90%;
+height: 90%;
 }

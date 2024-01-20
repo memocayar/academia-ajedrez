@@ -1,5 +1,5 @@
-import tablero from "./tablero.png"
-import './banner.css'
+import tablero from "./tablero.png";
+import "./banner.css";
 export function Banner() {
   return (
     <div id="contenedor">
@@ -10,9 +10,9 @@ export function Banner() {
           Estudia, entrena y prepárate a tu ritmo.
         </h3>
       </div>
-      
-      <div id= "imagen">
-        <img src={tablero}/>
+
+      <div id="contenedorImagen">
+        <img src={tablero} id="imagen"/>
       </div>
     </div>
   );
