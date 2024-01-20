@@ -2,10 +2,12 @@
   display: flex;
   justify-content: space-between;
 }
+
 #textos {
   margin-left: 15em;
   margin-top: 10em;
 }
+
 #titulo {
   color: #000;
   font-family: "Titillium Web";
@@ -15,6 +17,7 @@
   line-height: normal;
   letter-spacing: 2px;
 }
+
 #parrafo {
   color: #67696b;
   font-family: "Titillium Web";
@@ -23,5 +26,6 @@
   font-weight: 400;
   line-height: 150%; /* 150% */
 }
+
 #imagen {
 }

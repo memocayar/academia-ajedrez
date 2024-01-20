@@ -5,4 +5,8 @@ import { Banner } from "./componentes/Banner";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(<>{Banner()}</>);
+root.render(
+<>
+    {Banner()}
+
+</>);
