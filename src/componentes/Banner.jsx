@@ -1,17 +1,18 @@
-import tablero from "./tablero.png";
+import tablero from "./tablero.png"
+import './banner.css'
 export function Banner() {
   return (
-    <div style={{ display: "flex", justifyContent: "end" }}>
-      <div style={{ marginLeft: "90px", width: "650px", marginTop: "140px" }}>
-        <h1>Academia de Ajedrez</h1>
-        <h3 style={{ color: "#67696B", width: "650px" }}>
+    <div id="contenedor">
+      <div id="textos">
+        <h1 id="titulo">Academia de Ajedrez</h1>
+        <h3 id="parrafo">
           Clases online profesionales y personalizadas. Individuales y grupales.
           Estudia, entrena y prepárate a tu ritmo.
         </h3>
       </div>
       
-      <div className="imagen">
-        <img src={tablero} style={{ width: "100%" }} />
+      <div id= "imagen">
+        <img src={tablero}/>
       </div>
     </div>
   );
