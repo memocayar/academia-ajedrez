@@ -5,7 +5,6 @@
 
 }
 
-
 #textos {
   margin-left: 6em;
   margin-top: 3em;
@@ -41,4 +40,24 @@
 width: 100%;
 max-width: 500px;
 height: auto;
+
+}
+
+@media screen and (max-width: 767px) {
+  #contenedor {
+    grid-template-columns: 1fr; /* Cambiar a una sola columna */
+  }
+
+  #textos {
+    margin: 1em; /* Reducir el margen */
+    text-align: center; /* Centrar el texto */
+  }
+
+  #contenedorImagen {
+    justify-content: center; /* Centrar la imagen */
+  }
+
+  #imagen {
+    display: none; /* Ocultar la imagen en pantallas pequeñas */
+  }
 }
