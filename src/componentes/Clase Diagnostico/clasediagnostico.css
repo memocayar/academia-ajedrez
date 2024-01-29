@@ -12,6 +12,7 @@
 #parrafoclase,
 #botonclase {
   text-align: center;
+  max-width: 90%; /* Ancho máximo para los textos y el botón */
 }
 
 #tituloclase {
@@ -40,7 +41,9 @@
   color: #FFFF;
   font-family: "Titillium Web";
   font-size: 16px;
+  box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
   width: 280px;
+  max-width: 100%;
   padding: 12px 0px ;
   justify-content: center;
   align-items: center;
@@ -53,11 +56,9 @@
 }
 
 
-
-@media screen and (min-width: 768px) {
-  #clase {
-    grid-template-columns: 1fr; /* Cambia a una columna en pantallas grandes */
-    gap: 20px; /* Reduce el espacio entre elementos */
+@media screen and (max-width: 767px) {
+  #botonclase {
+    width: 80%; /* El ancho del botón ocupará todo el ancho disponible en pantallas pequeñas */
+    max-width: 280px; /* Ancho máximo del botón */
   }
-
 }
