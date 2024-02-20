@@ -4,14 +4,14 @@
     width: 100%;
     background-color: #e7e7e7; /* Color de fondo del footer */
     color: #98A2B3; /* Color del texto */
-    padding: 10px 20px; /* Espacio interior */
     display: grid;
-    grid-template-columns: auto 30px 30px; /* Columnas para el texto y las imágenes */
+    grid-template-columns: 80% 10% 10%; /* Columnas para el texto y las imágenes */
     align-items: center; /* Centrar verticalmente */
+    padding: 10px 2vw; /* Espacio interior con padding en porcentaje del ancho de la ventana */
+    gap: 10px;
   }
   
   #creditos {
-    margin: 0px;
     font-family: 'Titillium Web';
     font-size: 10px;
     font-style: normal;
@@ -20,21 +20,18 @@
     max-width: 400px;
   }
   
-  #logoInstagram,
+  #logoInstagram {
+    justify-self: end; /* Alinear a la derecha */
+    width: 20px; /* Ancho de las imágenes */
+    height: auto; /* Altura automática */
+  }
   #logoFacebook {
-    width: 30px; /* Ancho de las imágenes */
+    width: 20px; /* Ancho de las imágenes */
     height: auto; /* Altura automática */
   }
   
   @media screen and (max-width: 767px) {
     #contenedorFooter {
-      grid-template-columns: auto; /* Cambiar a una columna en pantallas pequeñas */
-      text-align: center; /* Centrar el texto e imágenes en pantallas pequeñas */
-    }
-  
-    #logoInstagram,
-    #logoFacebook {
-      margin: 0 5px; /* Agregar margen entre las imágenes en pantallas pequeñas */
-    }
+      grid-template-columns: 70% 15% 15%; /* Columnas para el texto y las imágenes */
+    }  
   }
-  
