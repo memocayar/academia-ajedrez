@@ -1,6 +1,7 @@
 import tablero from "./tablero.png";
 import "./banner.css";
-export function Banner() {
+
+export default function Banner() {
   return (
     <div id="contenedor">
       <div id="textos">
