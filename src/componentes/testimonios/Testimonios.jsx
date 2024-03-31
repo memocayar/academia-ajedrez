@@ -15,8 +15,7 @@ export default function Testimonios() {
     { author: "Alejo, Argentina", 
       text: "Es muy útil revisar las partidas propias con los profes, pero, además, si sienten que tenés una debilidad en algún tema específico, consiguen material para trabajar sobre él. Gracias a la Academia HerMar, hoy siento que tengo un mejor entendimiento de este juego tan complejo y aprendo algo nuevo en cada clase." 
     },
-    {
-      author: "Romel, Argentina",
+    { author: "Romel, Argentina",
       text: "Me gusta mucho su forma de trabajar con los alumnos. Porque se enfocan en mejorar los errores que cometes en partidas y perfeccionar tus puntos fuertes.",
     },
     { author: "Leonardo, México", 
@@ -24,6 +23,15 @@ export default function Testimonios() {
     },
     { author: "Agustín, Argentina", 
       text: "Me parece interesante el enfoque en distintos pilares (repertorio, estrategia, finales, etc.) ya que el conocimiento de estos da como resultado una mejora notable en el juego." 
+    },
+    { author: "Cristian y Mirna, Argentina", 
+      text: "Las clases son claras, precisas y divertidas, adaptando los conceptos complejos para una comprensión fácil. Nos motivan a aplicar lo aprendido, generando avances notables desde conocimientos básicos. Los profesores son amables y siempre dispuestos a ayudar con materiales de refuerzo y responder preguntas." 
+    },
+    { author: "Marcos, Argentina", 
+      text: "Muy buena experiencia. Lo que más me gusto fueron algunos ejercicios donde había que analizar la posición y establecer planes en partidas mías viejas que ya no recordaba." 
+    },
+    { author: "Antonio, España", 
+      text: "La ayuda de Juan Miguel y Román ha sido esencial para mi progreso en el ajedrez. Su capacidad para simplificar conceptos complejos y motivarme continuamente ha acelerado mi aprendizaje. En nuestras clases, avanzamos de manera gradual y constructiva, dejándome con ganas de seguir aprendiendo y practicando." 
     },
     // Agrega más testimonios aquí
   ];
