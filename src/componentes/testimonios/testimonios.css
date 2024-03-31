@@ -6,7 +6,7 @@
     margin-bottom: 2rem;
 }
 
-.card{
+.testimonio-card{
     position: relative;
     width: 18em;
     text-align: left;
@@ -23,23 +23,23 @@
     margin-left: 0.9rem;
 }	
 
-.card-content{
+.testimonio-card-content{
     padding-top: 1.5rem;
     justify-content: space-between;
 }
 
-.card-body{
+.testimonio-card-body{
     padding-left: 1.3rem;
     padding-right: 1.3rem;
 }
 
-.card-text{
+.testimonio-card-text{
     font-size: 1.1rem;
     font-style: italic;
     color: #000;
 }
 
-.card-author{
+.testimonio-card-author{
     font-size: 0.rem;
     color: #000;
 }
