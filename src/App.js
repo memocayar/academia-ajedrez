@@ -5,6 +5,8 @@ import Footer from "./componentes/footer/Footer";
 import FAQ from "./componentes/faq/FAQ";
 import Metodologia from "./componentes/metodologia/Metodologia";
 import Navbar from "./componentes/navbar/Navbar";
+import Planes from "./componentes/planes/Planes";
+import Testimonios from "./componentes/testimonios/Testimonios";
 
 function App() {
   return(
@@ -12,7 +14,9 @@ function App() {
       <Navbar />
       <Banner />
       <Metodologia />
+      <Planes />
       <ClaseDiagnostico />
+      <Testimonios />
       <FAQ />
       <Footer />
     </div>
