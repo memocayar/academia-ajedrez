@@ -1,36 +1,63 @@
 #contenedorFooter {
-    bottom: 0;
-    width: 100%;
-    background-color: #e7e7e7; /* Color de fondo del footer */
-    color: #98A2B3; /* Color del texto */
-    display: grid;
+  bottom: 0;
+  width: 100%;
+  background-color: #e7e7e7; /* Color de fondo del footer */
+  color: #98a2b3; /* Color del texto */
+  display: grid;
+  grid-template-columns: 90% 5% 5%; /* Columnas para el texto y las imágenes */
+  align-self: center; /* Centrar verticalmente */
+  padding: 10px 2vw; /* Espacio interior con padding en porcentaje del ancho de la ventana */
+  gap: 0.5rem;
+}
+
+#creditos {
+  font-family: "Titillium Web";
+  font-size: clamp(
+    11px,
+    2vw,
+    14px
+  ); /* Tamaño de fuente con rango entre 5px y 13px */
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 150% */
+  max-width: 500px;
+}
+
+#logoFacebook {
+  width: clamp(
+    20px,
+    5vw,
+    30px
+  ); /* Ancho de imagen con rango entre 20px y 30px */
+  height: auto; /* Altura automática */
+}
+
+@media screen and (max-width: 935px) {
+  #contenedorFooter {
+    grid-template-columns: 86% 7% 7%; /* Columnas para el texto y las imágenes */
+  }
+}
+@media screen and (max-width: 630px) {
+  #contenedorFooter {
     grid-template-columns: 80% 10% 10%; /* Columnas para el texto y las imágenes */
-    align-items: center; /* Centrar verticalmente */
-    padding: 10px 2vw; /* Espacio interior con padding en porcentaje del ancho de la ventana */
-    gap: 10px;
   }
-  
-  #creditos {
-    font-family: 'Titillium Web';
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%; /* 150% */
-    max-width: 400px;
+}
+@media screen and (max-width: 340px) {
+  #contenedorFooter {
+    grid-template-columns: 74% 13% 13%; /* Columnas para el texto y las imágenes */
   }
-  
-  #logoInstagram {
-    justify-self: end; /* Alinear a la derecha */
-    width: 20px; /* Ancho de las imágenes */
-    height: auto; /* Altura automática */
+}
+@media screen and (max-width: 260px) {
+  #contenedorFooter {
+    grid-template-columns: auto auto auto; /* Columnas para el texto y las imágenes */
   }
-  #logoFacebook {
-    width: 20px; /* Ancho de las imágenes */
-    height: auto; /* Altura automática */
-  }
-  
-  @media screen and (max-width: 767px) {
-    #contenedorFooter {
-      grid-template-columns: 70% 15% 15%; /* Columnas para el texto y las imágenes */
-    }  
-  }
+}
+#logoInstagram {
+  margin-left: auto;
+  width: clamp(
+    20px,
+    5vw,
+    30px
+  ); /* Ancho de imagen con rango entre 20px y 30px */
+  height: auto; /* Altura automática */
+}
