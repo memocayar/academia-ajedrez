@@ -4,13 +4,28 @@
   background-color: #e7e7e7; /* Color de fondo del footer */
   color: #98a2b3; /* Color del texto */
   display: grid;
-  grid-template-columns: 90% 5% 5%; /* Columnas para el texto y las imágenes */
+  grid-template-columns: 2fr 1fr; /* Columnas para el texto y las imágenes */
   align-self: center; /* Centrar verticalmente */
-  padding: 10px 2vw; /* Espacio interior con padding en porcentaje del ancho de la ventana */
   gap: 0.5rem;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+#listaRedes {
+  list-style: none; /* Esto quita las viñetas */
+  display: flex; /* Esto hace que los elementos de la lista se muestren en línea */
+  justify-content: flex-end;
+  padding: 0; /* Esto quita el padding predeterminado de la lista */
+  margin-bottom: 0px;
+}
+
+#listaRedes li {
+  margin: 0 10px; /* Esto añade un margen a los lados de cada elemento de la lista */
 }
 
 #creditos {
+  display: grid;
+  align-items: center;
   font-family: "Titillium Web";
   font-size: clamp(
     11px,
@@ -23,41 +38,22 @@
   max-width: 500px;
 }
 
-#logoFacebook {
-  width: clamp(
-    20px,
-    5vw,
-    30px
-  ); /* Ancho de imagen con rango entre 20px y 30px */
+#logoInstagram {
+  margin-left: auto;
+  width: 100%;
+  min-width: 24px;
   height: auto; /* Altura automática */
 }
 
-@media screen and (max-width: 935px) {
-  #contenedorFooter {
-    grid-template-columns: 86% 7% 7%; /* Columnas para el texto y las imágenes */
-  }
-}
-@media screen and (max-width: 630px) {
-  #contenedorFooter {
-    grid-template-columns: 80% 10% 10%; /* Columnas para el texto y las imágenes */
-  }
-}
-@media screen and (max-width: 340px) {
-  #contenedorFooter {
-    grid-template-columns: 74% 13% 13%; /* Columnas para el texto y las imágenes */
-  }
-}
-@media screen and (max-width: 260px) {
-  #contenedorFooter {
-    grid-template-columns: auto auto auto; /* Columnas para el texto y las imágenes */
-  }
-}
-#logoInstagram {
-  margin-left: auto;
-  width: clamp(
-    20px,
-    5vw,
-    30px
-  ); /* Ancho de imagen con rango entre 20px y 30px */
+#logoFacebook {
+  width: 100%;
+  min-width: 24px;
   height: auto; /* Altura automática */
+}
+
+#creditos,
+#logoInstagram,
+#logoFacebook {
+  /* tus estilos existentes */
+  margin-bottom: 0;
 }
