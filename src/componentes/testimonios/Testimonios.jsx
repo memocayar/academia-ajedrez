@@ -35,6 +35,7 @@ export default function Testimonios() {
     },
     // Agrega más testimonios aquí
   ];
+  
   const testimoniosPorSlide = window.innerWidth >= 992 ? 3 : window.innerWidth >= 768 ? 2 : 1;
 
   return (

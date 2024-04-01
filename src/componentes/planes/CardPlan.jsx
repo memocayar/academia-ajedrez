@@ -4,7 +4,7 @@ import Card from "react-bootstrap/Card";
 
 export default function CardPlan({ title, description, items }) {
   return (
-    <Card className="plan-card" id="plan-card" style={{ width: "22rem" }}>
+    <Card className="plan-card" id="plan-card">
       <Card.Body>
         <Card.Title className="plan-card-title">{title}</Card.Title>
         <Card.Text id="plan-card-description">{description}</Card.Text>
@@ -22,7 +22,7 @@ export default function CardPlan({ title, description, items }) {
 function CardPlanItem({ text }) {
   return (
     <div className="row card-plan-item">
-      <div className="plan-icon col-1"></div>
+      <div className="plan-icon"></div>
       <div className="col item-text">
         <span>{text}</span>
       </div>
