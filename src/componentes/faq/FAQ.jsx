@@ -2,6 +2,23 @@ import React from "react";
 import AcordionItem from "./AcordionItem";
 
 export default function FAQ() {
+  const faqData = [
+    {
+      id: "flush-collapseOne",
+      title: "Pregunta 1",
+      content: "Contenido de la pregunta 1",
+    },
+    {
+      id: "flush-collapseTwo",
+      title: "Pregunta 2",
+      content: "Contenido de la pregunta 2",
+    },
+    {
+      id: "flush-collapseThree",
+      title: "Pregunta 3",
+      content: "Contenido de la pregunta 3",
+    },
+  ];
   return (
     <div className="container">
       <h2 className="titulos-secciones">Preguntas Frecuentes</h2>
