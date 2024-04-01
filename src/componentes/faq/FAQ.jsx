@@ -1,5 +1,6 @@
 import React from "react";
 import AcordionItem from "./AcordionItem";
+import "./faq.css";
 
 const faqData = [
   {
@@ -21,7 +22,7 @@ const faqData = [
 
 export default function FAQ() {
   return (
-    <div className="container">
+    <div className="container faq-container">
       <h2 className="titulos-secciones">Preguntas Frecuentes</h2>
       <p>Todo lo que necesitas saber acerca de nuestra academia</p>
 
@@ -36,9 +37,9 @@ export default function FAQ() {
         ))}
       </div>
 
-      <button type="button" class="btn btn-outline-secondary">
+      <a href="/FAQ" className="btn btn-outline-secondary" id="faq-button">
         VER MÁS
-      </button>
+      </a>
     </div>
   );
 }
