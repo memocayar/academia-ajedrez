@@ -1,8 +1,23 @@
 import React from "react";
 import AcordionItem from "./AcordionItem";
 
-export default function FAQ() {
+export default function FullFAQ() {
   const faqData = [
+    {
+      id: "flush-collapseOne",
+      title: "Pregunta 1",
+      content: "Contenido de la pregunta 1",
+    },
+    {
+      id: "flush-collapseTwo",
+      title: "Pregunta 2",
+      content: "Contenido de la pregunta 2",
+    },
+    {
+      id: "flush-collapseThree",
+      title: "Pregunta 3",
+      content: "Contenido de la pregunta 3",
+    },
     {
       id: "flush-collapseOne",
       title: "Pregunta 1",
@@ -34,10 +49,6 @@ export default function FAQ() {
           />
         ))}
       </div>
-
-      <button type="button" class="btn btn-outline-secondary">
-        VER MÁS
-      </button>
     </div>
   );
 }

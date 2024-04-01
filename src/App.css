@@ -4,6 +4,11 @@
   overflow-y: auto;
 }
 
+.page{
+  margin-top: 4em;
+  min-height: 52rem;
+}
+
 .titulos-secciones {
   text-align: center;
   font-size: 2rem;
