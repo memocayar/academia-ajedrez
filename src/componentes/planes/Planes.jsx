@@ -16,10 +16,35 @@ export default function () {
           description="Orientado a aquellas personas sin conocimientos previos que quieran aprender a jugar al ajedrez y sus estrategias básicas."
           items={[
             "4 clases en vivo de 60 mins.",
-            "Material didáctico incluido.",
+            "Conceptos básicos de ajedrez.",
+            "Fases y estrategias del ajedrez",
+            "Acceso a biblioteca virtual",
+            "Acceso a grupo de WhatsApp"
             // Agrega los otros items aquí
           ]}
         />
+        <CardPlan
+          title="Clases Individuales"
+          description="Diseñado para personas que tengan conocimientos previos, sin importar el nivel o la
+          edad."
+          items={[
+            "Cantidad de clases que quieras",
+            "Planificación personalizada",
+            "Clase extra mensual en video",
+            "Actividades mensuales",
+            "Acceso a grupo y biblioteca",
+          ]}/> 
+          <CardPlan
+          title="Clases Grupales"
+          description="Diseñado para personas que quieren incrementar tus conocimientos sobre el ajedrez, sin
+          importar si recién aprendiste a jugar o si ya tenés algo de experiencia."
+          items={[
+            "3 clases grupales por semana",
+            "Grupos de hasta 7 personas",
+            "Entrenamiento en todas las áreas",
+            "Clase extra mensual en video",
+            "Actividades mensuales y accesos",
+          ]}/> 
         {/*         
 ------ COPIAR PEGAR Y COMPLETAR --------
           <CardPlan
