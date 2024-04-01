@@ -2,7 +2,7 @@ import "./footer.css";
 import logoFacebook from "./logoFacebook.png";
 import logoInstagram from "./logoInstagram.png";
 
-export default function footer() {
+export default function Footer() {
   return (
     <div id="contenedorFooter">
       <p id="creditos">
