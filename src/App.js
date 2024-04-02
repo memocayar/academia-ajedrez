@@ -9,6 +9,7 @@ import Navbar from "./componentes/navbar/Navbar";
 import Planes from "./componentes/planes/Planes";
 import Testimonios from "./componentes/testimonios/Testimonios";
 import FullFAQ from "./componentes/faq/FullFAQ";
+import Contacto from "./componentes/contacto/Contacto";
 
 export default function App() {
   return (
@@ -70,6 +71,16 @@ export default function App() {
               <>
                 <div className="page">
                   <FullFAQ  />
+                </div>
+              </>
+            }
+          />
+          <Route
+            path="/contactar"
+            element={
+              <>
+                <div className="page">
+                  <Contacto/>
                 </div>
               </>
             }
