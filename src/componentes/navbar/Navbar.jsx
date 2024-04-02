@@ -3,6 +3,14 @@ import "./navbar.css";
 import hermarLogo from "../../img/logo-hermar-azul.png";
 
 export default function Navbar() {
+  const scrollToTestimonios = (event) => {
+    event.preventDefault();
+    const testimoniosElement = document.getElementById('testimonios');
+    window.scrollTo({
+      top: testimoniosElement.offsetTop - 100, // Ajusta este valor según tus necesidades
+      behavior: 'smooth'
+    });
+  }
   return (
     <div className="my-navbar">
       <nav className="navbar navbar-expand-lg fixed-top">
@@ -44,7 +52,7 @@ export default function Navbar() {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link active" href="/testimonios">
+                  <a className="nav-link active" href="#testimonios" onClick={scrollToTestimonios}>
                     Testimonios
                   </a>
                 </li>

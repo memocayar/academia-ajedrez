@@ -1,97 +1,76 @@
 .instructores-container {
-  min-height: 30rem;
-  position: relative;
+  background-image: url("../../img/instructores-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: top;
+  background-size: 100% 30rem;
+  margin-bottom: 2rem;
 }
 
-.instructores-contenido {
-  position: relative;
-  z-index: 3;
+.instructores-title {
+  padding-top: 4rem;
 }
 
-.instructores-title{
-    margin-top: 5rem;
+.instructores {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.rectangle {
-  position: relative;
-  z-index: 1;
-  width: auto;
-  height: 30rem;
-  background: #f9f5ff;
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+.instructor-card {
+  background-color: #ffffff;
+  padding: 1rem;
+  margin: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 35rem;
 }
 
-.franja {
-  position: relative;
-  z-index: 2;
-  width: auto;
-  height: 8rem;
-  background: #e4e4f400;
-  clip-path: polygon(0 56%, 100% 0, 100% 46%, 0% 100%);
-  border-color: transparent;
+.instructor-descripcion {
+  text-align: start;
 }
 
-.rectangle1::after {
-  content: "";
-  position: absolute;
-  top: -10%;
-  left: 75%;
-  width: 50%;
-  height: 100%;
-  background: #7c91be;
+.instructor-foto {
+  width: 90%;
+  height: auto;
 }
 
-.rectangle2::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 30%;
-  height: 100%;
-  background: #e4e4f4;
+.instructor-botones {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
 }
 
-.rectangle2::after {
-  content: "";
-  position: absolute;
-  top: -10%;
-  left: 65%;
-  width: 50%;
-  height: 100%;
-  background: #e4e4f4;
+.instructor-boton {
+  background-color: #f3f3f391;
+  color: #344054;
+  border-color: #d0d5dd7d;
+  margin: 0.5rem;
+  width: 100%;
+  font-weight: 600;
 }
 
-.rectangle3::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 20%;
-  height: 100%;
-  background: #7c91be;
+.instructor-nombre {
+  font-size: 26px;
+  font-weight: bold;
+  color: #565859;
 }
 
-.rectangle3::after {
-  content: "";
-  position: absolute;
-  top: -10%;
-  left: 80%;
-  width: 50%;
-  height: 100%;
-  background: #e9ecf4;
+.instructor-titulo {
+  font-size: 18px;
+  color: #344054;
 }
 
-.franjas {
-  position: relative;
-  z-index: 2;
+.instructor-header {
+  padding: 0.8rem;
 }
 
-.rectangle {
-    position: relative; /* o absolute, dependiendo de tu layout */
-    z-index: 1;
-}
+@media (max-width: 425px) {
+  .instructor-descripcion {
+    text-align: justify;
+    margin:1rem;
+  }
 
-.instructores-contenido {
-    position: relative; /* o absolute, dependiendo de tu layout */
-    z-index: 2;
+  .instructor-boton{
+    margin-top:0rem;
+  }
 }

@@ -1,0 +1,60 @@
+.beneficios-item-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+p{
+  font-size: 18px;
+}
+
+.beneficios-item {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.beneficios-item-icon {
+  max-width: 80px;
+  max-height: 85px;
+  margin-top: 1rem;
+}
+
+.circle {
+  width: 120px;
+  height: 120px;
+  background: #dfe0f1;
+  border-radius: 43%;
+  border-color: #f9f5ff;
+  border-width: 10px;
+  border-style: solid;
+}
+
+
+.beneficios-item-body {
+  margin-top: 0.5rem;
+  text-align: start;
+  font-family: "Inter";
+}
+
+.beneficios-item-title {
+  font-size: 20px;
+  font-weight: medium;
+}
+
+.beneficios-item-description {
+  font-size: 16px;
+  color: #667085;
+}
+
+@media (max-width: 1024px) {
+  .beneficios-card {
+    background-color: red;
+    width: 400px;
+    max-width: 400px;
+    min-height: 350px;
+    max-height: 350px;
+  }
+}

@@ -1,0 +1,23 @@
+.sobreHermar-textos{
+    margin-top: 2rem;
+    text-align: start;
+    margin-bottom: 1rem;
+}
+
+.sobreHermar-texto{
+    margin-bottom: 2rem;
+}
+
+.sobreHermar-texto-title{
+    font-size: 26px;
+    font-weight: bold;
+    color: #1a1a1a;
+}
+
+
+.sobreHermar-texto-body{
+    font-size: 18px;
+    color: #667085;
+    font-family: "Inter";
+}
+

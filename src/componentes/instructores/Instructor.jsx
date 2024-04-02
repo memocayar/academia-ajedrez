@@ -21,12 +21,12 @@ export default function Instructor({ name, title, description, fide, lichess, fo
         </div>
         <div className="row instructor-botones">
           <div className="col-md-6">
-            <a href={fide} type="button" class="btn btn-secondary instructor-boton">
+            <a href={fide} type="button" target="_blank" class="btn btn-secondary instructor-boton">
               Ratings FIDE
             </a>
           </div>
           <div className="col-md-6">
-            <a href={lichess} type="button" class="btn btn-secondary instructor-boton">
+            <a href={lichess} type="button" target="_blank" class="btn btn-secondary instructor-boton">
               Perfil Lichess
             </a>
           </div>

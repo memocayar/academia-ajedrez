@@ -9,8 +9,9 @@ import Navbar from "./componentes/navbar/Navbar";
 import Planes from "./componentes/planes/Planes";
 import Testimonios from "./componentes/testimonios/Testimonios";
 import FullFAQ from "./componentes/faq/FullFAQ";
-import Instructores from "./componentes/instructores/Instructores2";
+import Instructores from "./componentes/instructores/Instructores";
 import WhatsAppButton from "./componentes/whatsapp";
+import SobreHermar from "./componentes/sobre-hermar/SobreHermar";
 
 export default function App() {
   return (
@@ -39,7 +40,9 @@ export default function App() {
             path="/sobre-hermar"
             element={
               <>
-                <div className="page"></div>
+                <div className="page">
+                  <SobreHermar />
+                </div>
               </>
             }
           />

@@ -39,7 +39,7 @@ export default function Testimonios() {
   const testimoniosPorSlide = window.innerWidth >= 992 ? 3 : window.innerWidth >= 768 ? 2 : 1;
 
   return (
-    <div className="container testimonios-container">
+    <div className="container testimonios-container" id="testimonios">
       <h2 className="titulos-secciones">Testimonios </h2>
       <p className="subtitulos-secciones">
         Algunas experiencias de los alumnos de HerMar
