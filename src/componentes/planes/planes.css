@@ -7,7 +7,7 @@
     justify-content: center;
     gap: 3rem;
     align-items: center;
-    flex-wrap: wrap;
+    width: 100%;
 }
 
 .plan-button{
@@ -28,9 +28,10 @@
     padding: 0.5rem;
     border-radius: 1.5rem;
     border-color: transparent;
-    width: 25rem;
     text-align: start;
     transition: all 0.3s;
+    width: 22rem;
+    height: auto;
 }
 
 .plan-card:hover{
@@ -93,4 +94,18 @@
 
 .planes-subtitulo{
     margin-bottom: 2rem;
+}
+
+@media (max-width: 1200px) {
+    .plan-cards-container {
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .plan-card {
+        width: 20rem;
+    }	
 }

@@ -4,7 +4,7 @@ import CardPlan from "./CardPlan";
 
 export default function () {
   return (
-    <div className="container">
+    <div className="container-fluid">
       <h2 className="titulos-secciones">Descubre nuestros planes de clases </h2>
       <p className="subtitulos-secciones planes-subtitulo">
         Totalmente flexibles para adecuarse a vos
@@ -20,7 +20,6 @@ export default function () {
             "Fases y estrategias del ajedrez",
             "Acceso a biblioteca virtual",
             "Acceso a grupo de WhatsApp"
-            // Agrega los otros items aquí
           ]}
         />
         <CardPlan
@@ -45,16 +44,6 @@ export default function () {
             "Clase extra mensual en video",
             "Actividades mensuales y accesos",
           ]}/> 
-        {/*         
------- COPIAR PEGAR Y COMPLETAR --------
-          <CardPlan
-          title=""
-          description=""
-          items={[
-            "",
-            "",
-          ]}/> 
-        */}
       </div>
     </div>
   );
