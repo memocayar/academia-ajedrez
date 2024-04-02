@@ -64,9 +64,9 @@ export default function Navbar() {
               </ul>
 
             <div className="contactar">
-              <button className="btn btn-outline-success" type="submit">
+              <a className="btn btn-outline-success" type="submit" href="/contactar">
                 CONTACTAR
-              </button>
+              </a>
             </div>
           </div>
         </div>

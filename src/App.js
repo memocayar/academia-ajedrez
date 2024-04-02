@@ -12,6 +12,7 @@ import FullFAQ from "./componentes/faq/FullFAQ";
 import Instructores from "./componentes/instructores/Instructores";
 import WhatsAppButton from "./componentes/whatsapp";
 import SobreHermar from "./componentes/sobre-hermar/SobreHermar";
+import Contacto from "./componentes/contacto/Contacto";
 
 export default function App() {
   return (
@@ -76,6 +77,16 @@ export default function App() {
               <>
                 <div className="page">
                   <FullFAQ  />
+                </div>
+              </>
+            }
+          />
+          <Route
+            path="/contactar"
+            element={
+              <>
+                <div className="page">
+                  <Contacto/>
                 </div>
               </>
             }
