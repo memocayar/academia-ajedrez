@@ -9,12 +9,14 @@ import Navbar from "./componentes/navbar/Navbar";
 import Planes from "./componentes/planes/Planes";
 import Testimonios from "./componentes/testimonios/Testimonios";
 import FullFAQ from "./componentes/faq/FullFAQ";
+import Instructores from "./componentes/instructores/Instructores2";
+import WhatsAppButton from "./componentes/whatsapp";
 
 export default function App() {
   return (
     <div className="App">
       <Navbar />
-
+      <WhatsAppButton />
       <Router>
         <Routes>
           <Route
@@ -24,6 +26,7 @@ export default function App() {
                 <div className="page">
                   <Banner />
                   <Metodologia />
+                  <Instructores />
                   <Planes />
                   <ClaseDiagnostico />
                   <Testimonios />

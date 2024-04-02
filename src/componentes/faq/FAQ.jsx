@@ -4,11 +4,6 @@ import "./faq.css";
 
 const faqData = [
   {
-    id: "flush-collapseOne",
-    title: "¿Puedo acceder a las clases en cualquier momento, o hay un horario específico?",
-    content: "Las clases en vivo son en horarios a coordinar entre la disponibilidad del alumno y la academia. Adicionalmente, todos los meses tendrás disponible también una clase extra pregrabada en vídeo (sobre un tema específico, que irán variando) para que puedas verla en cualquier momento.",
-  },
-  {
     id: "flush-collapseTwo",
     title: "¿Necesito experiencia previa para unirme a la Academia?",
     content: "No necesitas experiencia previa para unirte a la Academia. Nuestras clases están diseñadas para todos los niveles, desde principiantes hasta jugadores avanzados. Luego de un primer acercamiento a modo de diagnóstico, elaboraremos una planificación personalizada para cada estudiante, de modo tal que cada uno pueda entrenar y mejorar a su ritmo, y con nuestro apoyo constante.",
@@ -17,6 +12,11 @@ const faqData = [
     id: "flush-collapseThree",
     title: "¿Qué requerimientos tecnológicos son necesarios para tomar clases?",
     content: "Para acceder a las clases necesitarás una conexión a internet estable, y un ordenador. Recomendamos que sea una PC de escritorio o Notebook, así podrás acceder al tablero en mayor tamaño. Además, un micrófono para la llamada de voz. Puedes conectarte a la llamada a través de un teléfono celular, por ejemplo, y a la plataforma de ajedrez a través del computador. La cámara web no es obligatoria, aunque recomendamos mantenerla encendida para hacer la clase más amena.",
+  },
+  {
+    id: "flush-collapseOne",
+    title: "¿Puedo acceder a las clases en cualquier momento, o hay un horario específico?",
+    content: "Las clases en vivo son en horarios a coordinar entre la disponibilidad del alumno y la academia. Adicionalmente, todos los meses tendrás disponible también una clase extra pregrabada en vídeo (sobre un tema específico, que irán variando) para que puedas verla en cualquier momento.",
   },
 ];
 

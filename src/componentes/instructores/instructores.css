@@ -1,0 +1,97 @@
+.instructores-container {
+  min-height: 30rem;
+  position: relative;
+}
+
+.instructores-contenido {
+  position: relative;
+  z-index: 3;
+}
+
+.instructores-title{
+    margin-top: 5rem;
+}
+
+.rectangle {
+  position: relative;
+  z-index: 1;
+  width: auto;
+  height: 30rem;
+  background: #f9f5ff;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+}
+
+.franja {
+  position: relative;
+  z-index: 2;
+  width: auto;
+  height: 8rem;
+  background: #e4e4f400;
+  clip-path: polygon(0 56%, 100% 0, 100% 46%, 0% 100%);
+  border-color: transparent;
+}
+
+.rectangle1::after {
+  content: "";
+  position: absolute;
+  top: -10%;
+  left: 75%;
+  width: 50%;
+  height: 100%;
+  background: #7c91be;
+}
+
+.rectangle2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 100%;
+  background: #e4e4f4;
+}
+
+.rectangle2::after {
+  content: "";
+  position: absolute;
+  top: -10%;
+  left: 65%;
+  width: 50%;
+  height: 100%;
+  background: #e4e4f4;
+}
+
+.rectangle3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100%;
+  background: #7c91be;
+}
+
+.rectangle3::after {
+  content: "";
+  position: absolute;
+  top: -10%;
+  left: 80%;
+  width: 50%;
+  height: 100%;
+  background: #e9ecf4;
+}
+
+.franjas {
+  position: relative;
+  z-index: 2;
+}
+
+.rectangle {
+    position: relative; /* o absolute, dependiendo de tu layout */
+    z-index: 1;
+}
+
+.instructores-contenido {
+    position: relative; /* o absolute, dependiendo de tu layout */
+    z-index: 2;
+}
