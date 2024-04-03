@@ -1,16 +1,16 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./navbar.css";
 import hermarLogo from "../../img/logo-hermar-azul.png";
 
-export default function Navbar() {
-  const scrollToTestimonios = (event) => {
-    event.preventDefault();
-    const testimoniosElement = document.getElementById('testimonios');
-    window.scrollTo({
-      top: testimoniosElement.offsetTop - 100, // Ajusta este valor según tus necesidades
-      behavior: 'smooth'
-    });
+export default function Navbar() { 
+  const scrollToTestimonios = () => {
+    window.location.href = "/";
   }
+
+  const scrollToBeneficios = () => {
+    window.location.href = "/sobre-hermar";
+  }
+
   return (
     <div className="my-navbar">
       <nav className="navbar navbar-expand-lg fixed-top">
@@ -42,8 +42,8 @@ export default function Navbar() {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link active" href="/beneficios">
-                    Beneficios
+                  <a className="nav-link active" href="" onClick={scrollToBeneficios}>
+                    Beneficios del Ajedrez
                   </a>
                 </li>
                 <li className="nav-item">
@@ -52,7 +52,7 @@ export default function Navbar() {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link active" href="#testimonios" onClick={scrollToTestimonios}>
+                  <a className="nav-link active" href="" onClick={scrollToTestimonios}>
                     Testimonios
                   </a>
                 </li>

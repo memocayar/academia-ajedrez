@@ -6,7 +6,7 @@ export default function BeneficiosItem({ title, description, icon }) {
     <div className="row col-lg-6 col-md-12">
       <div className="row beneficios-item">
         <div className="col-3">
-          <div className="circle">
+          <div className="beneficios-circle">
             <img src={icon} alt="icono" className="beneficios-item-icon" />
           </div>
         </div>

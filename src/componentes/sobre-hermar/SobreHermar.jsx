@@ -74,7 +74,7 @@ export default function SobreHermar() {
 
       <Instructores />
 
-      <div className="container">
+      <div className="container" id="beneficios">
         <div className="sobreHermar-header">
           <h2 className="titulos-secciones">Beneficios del Ajedrez</h2>
           <p>
