@@ -5,6 +5,10 @@
   gap: 1rem; /* Gap between elements */
 }
 
+body {
+  height: 100%;
+}
+
 .contacto-contenedor {
   align-items: center;
   background-image: url("../../img/tablero.png");
@@ -18,7 +22,7 @@
   font-weight: bold;
   color: #000000;
   font-family: "Titillium Web";
-  margin-top: 5vw;
+  margin-top: 4vw;
 }
 
 #formulario,
@@ -73,6 +77,7 @@
   box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
   align-self: center; /* Alinea el botón al centro vertical en todas las resoluciones */
   margin-left: 1rem;
+  min-height: 60px;
 }
 
 #botonMail {
@@ -92,6 +97,7 @@
   background: #ffffff;
   box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
   align-self: center; /* Alinea el botón al centro vertical en todas las resoluciones */
+  min-height: 60px;
 }
 
 #contenedorImagen {
@@ -109,3 +115,39 @@
   font-size: 16px;
   padding-left: 0.5rem;
 }
+
+@media (max-width: 1141px) {
+  #botonMail{
+    min-height: 82.07px;
+  }
+}
+
+@media (max-width: 991px) {
+  .contacto-contenedor {
+    background-image: url("");
+  }  
+  #contenedor {
+    grid-template-columns: 1fr; /* Cambiar a una sola columna */
+  }
+  #formulario,
+  #contenedorbotones,
+  #parrafo,
+  #titulo {
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+  #botonMail{
+    min-height: 60px;
+  }
+}
+
+  @media (max-width: 561px) {
+    #contenedorBotones{
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    #botonWhatsapp{
+      margin-left: 0;
+    }
+  }
