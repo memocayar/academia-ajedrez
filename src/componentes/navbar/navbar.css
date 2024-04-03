@@ -3,6 +3,8 @@
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
+  align-items: center;
+  font-size: 17px;
 }
 
 .navbar-nav {
@@ -18,3 +20,25 @@
   }
 }
 
+.navbar-contactar{
+  background-color:#e6e7f7;
+  color: black;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  border-radius: 2px;
+  border-color: black;
+  min-width: 12rem;
+}
+
+.navbar-contactar:hover{
+  background-color: #DFE0F1;
+  color: black;
+  border-color: black;
+}
+
+.navbar-contactar.clicked {
+  background-color: #DFE0F1;
+  color: black;
+  border-color: black;
+}

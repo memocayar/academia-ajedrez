@@ -1,91 +1,111 @@
 #contenedor {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Single column */
-    grid-template-rows: none;
-    gap: 1rem; /* Gap between elements */
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Single column */
+  grid-template-rows: none;
+  gap: 1rem; /* Gap between elements */
+}
+
+.contacto-contenedor {
+  align-items: center;
+  background-image: url("../../img/tablero.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
 }
 
 #titulo {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #000000;
-    font-family: "Titillium Web";
-    margin-top: 5vw;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000000;
+  font-family: "Titillium Web";
+  margin-top: 5vw;
 }
-#formulario, #contenedorbotones, #parrafo, #titulo {
-    grid-column: 1; /* Coloca el formulario y los botones en la primera columna */
-    font-family: "Titillium Web";
-    margin-left: 10vw;
-  }
+
+#formulario,
+#contenedorbotones,
+#parrafo,
+#titulo {
+  grid-column: 1; /* Coloca el formulario y los botones en la primera columna */
+  font-family: "Titillium Web";
+  margin-left: 10vw;
+}
 
 #formulario {
-    display: flex;
-    flex-direction: column;
-    color: black;
-    gap: 0.1rem;
-  }
-.campoForm{
-    border: 1.5px solid;
-    border-color: gainsboro;
-    border-radius: 0.5rem;
-    margin-bottom: 1rem;
-    height: 2.3rem;
+  display: flex;
+  flex-direction: column;
+  color: black;
+  gap: 0.1rem;
+}
+.campoForm {
+  border: 1.5px solid;
+  border-color: gainsboro;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  height: 2.3rem;
 }
 
 #contenedorbotones {
-    display: flex;
-    justify-content: flex-start;
-    width: 100%;
-    margin-top: 1rem;
-  }
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin-top: 1rem;
+}
 
-#mensaje{
-    height: 4.6rem;
-}  
+#mensaje {
+  height: 4.6rem;
+}
 
 #botonWhatsapp {
-    color: #ffff;
-    font-family: "Titillium Web";
-    font-size: 16px;
-    font-weight: 600;
-    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
-    width: 100%;
-    max-width: 100%;
-    padding: 12px 0px;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    border-radius: 8px;
-    border: 1px solid #7c91be;
-    background: #7c91be;
-    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
-    align-self: center; /* Alinea el botón al centro vertical en todas las resoluciones */
-    margin-left: 1rem;
-  }
-#botonMail {
-    color: #000000;
-    font-family: "Titillium Web";
-    font-size: 16px;
-    font-weight: 600;
-    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
-    width: 100%;
-    max-width: 100%;
-    padding: 12px 0px;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    border-radius: 8px;
-    border: 1.5px solid gainsboro;
-    background: #ffffff;
-    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
-    align-self: center; /* Alinea el botón al centro vertical en todas las resoluciones */
-  }
-
-#contenedorImagen{
-    grid-column: 2;
+  color: #ffff;
+  font-family: "Titillium Web";
+  font-size: 16px;
+  font-weight: 600;
+  box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+  width: 100%;
+  max-width: 100%;
+  padding: 12px 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  border: 1px solid #7c91be;
+  background: #7c91be;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  align-self: center; /* Alinea el botón al centro vertical en todas las resoluciones */
+  margin-left: 1rem;
 }
-#imagen{
-    height: 100vh;
-    align-self: start; /* Alinea la imagen al inicio verticalmente */
-    justify-self: end; /* Alinea la imagen al final horizontalmente */
+
+#botonMail {
+  color: #000000;
+  font-family: "Titillium Web";
+  font-size: 16px;
+  font-weight: 600;
+  box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+  width: 100%;
+  max-width: 100%;
+  padding: 12px 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  border: 1.5px solid gainsboro;
+  background: #ffffff;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  align-self: center; /* Alinea el botón al centro vertical en todas las resoluciones */
+}
+
+#contenedorImagen {
+  grid-column: 2;
+}
+
+.icono-boton {
+  max-width: 2rem;
+  margin-left: 1rem;
+}
+
+.campoForm::placeholder {
+  color: #999;
+  font-style: italic;
+  font-size: 16px;
+  padding-left: 0.5rem;
 }

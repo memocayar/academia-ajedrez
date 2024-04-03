@@ -65,14 +65,14 @@
   align-items: center;
   gap: 8px;
   border-radius: 8px;
-  border: 1px solid #7c91be;
+  border: 1px solid #5d74a7;
   background: #7c91be;
   box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
   align-self: center; /* Alinea el botón al centro vertical en todas las resoluciones */
   margin-left: 1rem;
 }
 #botonagendar {
-  color: #000000;
+  color: #344054;
   font-family: "Titillium Web";
   font-size: 16px;
   font-weight: 600;
@@ -84,10 +84,13 @@
   align-items: center;
   gap: 8px;
   border-radius: 8px;
-  border: 1px solid #202228;
+  border: 1px solid #bdc0c7;
   background: #ffffff;
   box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
   align-self: center; /* Alinea el botón al centro vertical en todas las resoluciones */
+}
+#botonagendar:hover {
+  background: #f1f5ff;
 }
 
 @media screen and (max-width: 417px) {

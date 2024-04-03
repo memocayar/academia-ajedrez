@@ -42,7 +42,7 @@ export default function Navbar() {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link active" href="" onClick={scrollToBeneficios}>
+                  <a className="nav-link active" href="#beneficios" /* onClick={scrollToBeneficios} */>
                     Beneficios del Ajedrez
                   </a>
                 </li>
@@ -52,7 +52,7 @@ export default function Navbar() {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link active" href="" onClick={scrollToTestimonios}>
+                  <a className="nav-link active" href="#testimonios" /* onClick={scrollToTestimonios} */>
                     Testimonios
                   </a>
                 </li>
@@ -64,7 +64,7 @@ export default function Navbar() {
               </ul>
 
             <div className="contactar">
-              <a className="btn btn-outline-success" type="submit" href="/contactar">
+              <a className="btn btn-outline navbar-contactar" type="submit" href="/contactar">
                 CONTACTAR
               </a>
             </div>

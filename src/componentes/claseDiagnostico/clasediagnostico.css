@@ -62,3 +62,8 @@
     max-width: 280px; /* Ancho máximo del botón */
   }
 }
+
+#botonclase:hover {
+  background: #6b7f9f;
+  border: 1px solid #6b7f9f;
+}

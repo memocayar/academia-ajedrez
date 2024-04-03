@@ -13,6 +13,7 @@ import Instructores from "./componentes/instructores/Instructores";
 import WhatsAppButton from "./componentes/whatsapp";
 import SobreHermar from "./componentes/sobre-hermar/SobreHermar";
 import Contacto from "./componentes/contacto/Contacto";
+import PlanesPage from "./componentes/planes/PlanesPage";
 
 export default function App() {
   return (
@@ -59,7 +60,9 @@ export default function App() {
             path="/planes"
             element={
               <>
-                <div className="page"></div>
+                <div className="page">
+                  <PlanesPage />
+                </div>
               </>
             }
           />
