@@ -2,6 +2,7 @@ import React from "react";
 
 export default function Instructor({ name, title, description, fide, lichess, foto }) {
   return (
+    <div className="instructor">
     <div className="instructor-card">
       <div className="instructor-header">
         <h1 className="instructor-nombre">{name}</h1>
@@ -15,7 +16,6 @@ export default function Instructor({ name, title, description, fide, lichess, fo
             </div>
           </div>
         </div>
-
         <div className="col-md-6">
           <p className="instructor-descripcion">{description}</p>
         </div>
@@ -32,6 +32,7 @@ export default function Instructor({ name, title, description, fide, lichess, fo
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }
