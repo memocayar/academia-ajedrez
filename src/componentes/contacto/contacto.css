@@ -116,6 +116,8 @@ body {
   padding-left: 0.5rem;
 }
 
+
+
 @media (max-width: 1141px) {
   #botonMail{
     min-height: 82.07px;
@@ -149,5 +151,10 @@ body {
     }
     #botonWhatsapp{
       margin-left: 0;
+    }
+  }
+  @media (max-width: 305px) {
+    #titulo {
+      margin-top: 14vw;
     }
   }

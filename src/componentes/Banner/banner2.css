@@ -59,3 +59,9 @@
     font-size: 2em;
   }
 }
+
+@media (max-width: 853px) {
+  #banner-textos {
+    margin-top: 0.3rem;
+  }
+}

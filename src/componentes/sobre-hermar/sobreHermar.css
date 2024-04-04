@@ -20,4 +20,8 @@
     color: #667085;
     font-family: "Inter";
 }
-
+@media (max-width: 305px) {
+    .titulos-secciones {
+      margin-top: 3rem;
+    }
+  }
