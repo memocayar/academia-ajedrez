@@ -1,5 +1,5 @@
 import tablero from "./tablero.png";
-import "./banner2.css";
+import "./banner.css";
 
 export default function Banner() {
   return (
