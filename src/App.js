@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
-import Banner from "./componentes/banner/Banner2";
+import Banner from "./componentes/banner/Banner";
 import ClaseDiagnostico from "./componentes/claseDiagnostico/ClaseDiagnostico";
 import Footer from "./componentes/footer/Footer";
 import FAQ from "./componentes/faq/FAQ";
