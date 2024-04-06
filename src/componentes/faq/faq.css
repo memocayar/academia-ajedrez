@@ -1,0 +1,21 @@
+.faq-container{
+    margin-bottom: 3rem;
+    font-family: 'Titillium Web';
+}
+
+#faq-button{
+    margin-top: 0.5rem;
+    padding: 0.5rem 7rem;
+    color: #7C91BE;
+    border-color: #7C91BE;
+}
+
+#faq-button:hover{
+    color: #ffffff;
+    background-color: #7C91BE;
+    border-color: #7C91BE;
+}
+
+.accordion-body{
+    text-align: start;
+}

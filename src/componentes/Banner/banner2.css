@@ -1,0 +1,67 @@
+#banner-contenedor {
+  align-items: center;
+  height: 45vh;
+  max-height: 30rem;
+  background-image: url("./tablero.png");
+  background-position: right;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#banner-textos {
+  margin: 5rem;
+  text-align: start;
+}
+
+#banner-titulo {
+  font-size: 2.5em;
+  font-weight: bolder;
+}
+
+#banner-subtitulo {
+  font-size: 1.5em;
+  color: #67696b;
+}
+
+@media (max-width: 853px) {
+  #banner-contenedor {
+    background-image: url("");
+    max-height: 20rem;
+    padding-right: 0;
+  }
+  #banner-textos {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+  }
+  
+}
+
+@media (max-width: 1200px) {
+  #banner-contenedor {
+    height: auto;
+  }
+}
+
+@media (min-width: 2560px) {
+  #banner-titulo {
+    font-size: 3.5em;
+  }
+  #banner-subtitulo {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 853px) {
+  #banner-textos {
+    margin-top: 0.3rem;
+  }
+}

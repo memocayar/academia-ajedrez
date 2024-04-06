@@ -1,0 +1,75 @@
+.instructores-container {
+  background-image: url("../../img/instructores-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: top;
+  background-size: 100% 30rem;
+  margin-bottom: 2rem;
+}
+
+.instructores-title {
+  padding-top: 4rem;
+}
+
+.instructores {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.instructor-card {
+  background-color: #ffffff;
+  padding: 1rem;
+  margin: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 45rem;
+}
+
+.instructor-descripcion {
+  text-align: left;
+}
+
+.instructor-foto {
+  width: 90%;
+  height: auto;
+}
+
+.instructor-botones {
+  display: flex;
+  justify-content: center;
+}
+
+.instructor-boton {
+  background-color: #f3f3f391;
+  color: #344054;
+  border-color: #d0d5dd7d;
+  margin: 0.5rem;
+  width: 100%;
+  font-weight: 600;
+}
+
+.instructor-nombre {
+  font-size: 26px;
+  font-weight: bold;
+  color: #565859;
+}
+
+.instructor-titulo {
+  font-size: 18px;
+  color: #344054;
+}
+
+.instructor-header {
+  padding: 0.8rem;
+}
+
+@media (max-width: 425px) {
+  .instructor-descripcion {
+    text-align: justify;
+    margin:1rem;
+  }
+
+  .instructor-boton{
+    margin-top:0rem;
+  }
+}

@@ -1,0 +1,72 @@
+#contenedor {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: auto;
+  height: 50vh;
+}
+
+#textos {
+  justify-self: center;
+  align-self: center;
+  margin-left: 5em;
+}
+
+#titulo {
+  color: #000;
+  font-family: "Titillium Web";
+  font-size: 2em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+#parrafo {
+  color: #67696B;
+  font-family: "Titillium Web";
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5; /* 150% */
+}
+
+#contenedorImagen {
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+#imagen {
+width: 100%;
+max-width: 50rem;
+height: auto;
+}
+
+@media screen and (max-width: 767px) {
+  #contenedor {
+    grid-template-columns: 1fr; /* Cambiar a una sola columna */
+  }
+
+  #textos {
+    margin: 1em; /* Reducir el margen */
+    text-align: center; /* Centrar el texto */
+  }
+
+  #contenedorImagen {
+    justify-content: center; /* Centrar la imagen */
+  }
+
+  #imagen {
+    display: none; /* Ocultar la imagen en pantallas pequeñas */
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  #textos {
+    /* tus estilos existentes */
+    width: 100%;
+    font-size: 1.3em;
+    margin-left: 10vw;
+  }
+}

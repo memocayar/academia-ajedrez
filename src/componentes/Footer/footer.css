@@ -1,0 +1,60 @@
+#contenedorFooter {
+  margin-top: 4rem;
+  bottom: 0;
+  width: 100%;
+  background-color: #e7e7e7; /* Color de fondo del footer */
+  color: #98a2b3; /* Color del texto */
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* Columnas para el texto y las imágenes */
+  align-self: center; /* Centrar verticalmente */
+  gap: 0.5rem;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+#listaRedes {
+  list-style: none; /* Esto quita las viñetas */
+  display: flex; /* Esto hace que los elementos de la lista se muestren en línea */
+  justify-content: flex-end;
+  padding: 0; /* Esto quita el padding predeterminado de la lista */
+  margin-bottom: 0px;
+}
+
+#listaRedes li {
+  margin: 0 10px; /* Esto añade un margen a los lados de cada elemento de la lista */
+}
+
+#creditos {
+  display: grid;
+  align-items: center;
+  font-family: "Titillium Web";
+  font-size: clamp(
+    11px,
+    2vw,
+    14px
+  ); /* Tamaño de fuente con rango entre 5px y 13px */
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 150% */
+  max-width: 500px;
+}
+
+#logoInstagram {
+  margin-left: auto;
+  width: 100%;
+  min-width: 24px;
+  height: auto; /* Altura automática */
+}
+
+#logoFacebook {
+  width: 100%;
+  min-width: 24px;
+  height: auto; /* Altura automática */
+}
+
+#creditos,
+#logoInstagram,
+#logoFacebook {
+  /* tus estilos existentes */
+  margin-bottom: 0;
+}

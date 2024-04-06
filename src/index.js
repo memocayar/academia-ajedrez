@@ -1,8 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import { Banner } from "./componentes/Banner";
+import App from "./App.js";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(<>{Banner()}</>);
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
