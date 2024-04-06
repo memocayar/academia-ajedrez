@@ -11,9 +11,11 @@ export default function CardPlan({ title, description, items }) {
         {items.map((item, index) => (
           <CardPlanItem key={index} text={item} />
         ))}
-        <Button variant="primary" size="lg" className="plan-button">
-          Ver Más
-        </Button>
+        <a href="/planes">
+          <Button variant="primary" size="lg" className="plan-button">
+            Ver Más
+          </Button>
+        </a>
       </Card.Body>
     </Card>
   );

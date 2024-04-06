@@ -103,8 +103,15 @@ export default function FullFAQ() {
           <p id="parrafoclase">Agenda una clase gratuita con nosotros.</p>
         </div>
         <div id="contenedor botones">
-          <button id="botonagendar">Agendar Clase</button>
-          <button id="botonclase">Contactanos</button>
+          <a
+            target="_blank"
+            href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3JLJ77pse8lY0-mnwwnhjg2a_twy__UVDMbiUDksOz4rlvx-cP4VyX-ShtlxO9JD1WVLOXS0jF"
+          >
+            <button id="botonagendar">Agendar Clase</button>
+          </a>
+          <a href="/contactar">
+            <button id="botonclase">Contactanos</button>
+          </a>
         </div>
       </div>
     </div>
