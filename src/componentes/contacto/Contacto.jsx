@@ -28,7 +28,7 @@ const Contacto = () => {
   return (
     <div id="contenedor" className="contacto-contenedor">
       <h2 id="titulo">Comencemos conociéndonos</h2>
-      <p id="parrafo">Cuéntanos acerca de ti y tus objetivos. Estamos aquí para responder a todas tus preguntas y brindarte la ayuda que necesitas.</p>
+      <p id="parrafo">Cuéntanos acerca de ti y tus objetivos. Estamos aquí para responder todas tus preguntas y brindarte la ayuda que necesitas.</p>
       <form id="formulario">
         <label htmlFor="nombre">Nombre y apellido:</label>
         <input
@@ -84,7 +84,9 @@ const Contacto = () => {
           </button>
         </div>
       </form>
+      <div id="segundoContenedor"> <br/> </div>
     </div>
+    
   );
 };
 export default Contacto;
