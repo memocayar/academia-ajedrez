@@ -23,7 +23,7 @@ export default function App() {
       <Router>
         <Routes>
           <Route
-            path="/"
+            path="academia-ajedrez/"
             element={
               <>
                 <div className="page">
@@ -39,7 +39,7 @@ export default function App() {
             }
           />
           <Route
-            path="/sobre-hermar"
+            path="academia-ajedrez/sobre-hermar"
             element={
               <>
                 <div className="page">
@@ -49,7 +49,7 @@ export default function App() {
             }
           />
           <Route
-            path="/beneficios"
+            path="academia-ajedrez/beneficios"
             element={
               <>
                 <div className="page"></div>
@@ -57,7 +57,7 @@ export default function App() {
             }
           />
           <Route
-            path="/planes"
+            path="academia-ajedrez/planes"
             element={
               <>
                 <div className="page">
@@ -67,7 +67,7 @@ export default function App() {
             }
           />
           <Route
-            path="/testimonios"
+            path="academia-ajedrez/testimonios"
             element={
               <>
                 <div className="page"></div>
@@ -75,7 +75,7 @@ export default function App() {
             }
           />
           <Route
-            path="/faq"
+            path="academia-ajedrez/faq"
             element={
               <>
                 <div className="page">
@@ -85,7 +85,7 @@ export default function App() {
             }
           />
           <Route
-            path="/contactar"
+            path="academia-ajedrez/contactar"
             element={
               <>
                 <div className="page">
