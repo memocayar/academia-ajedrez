@@ -8,14 +8,14 @@ export default function Navbar() {
   }
 
   const scrollToBeneficios = () => {
-    window.location.href = "/sobre-hermar";
+    window.location.href = "academia-ajedrez/sobre-hermar";
   }
 
   return (
     <div className="my-navbar">
       <nav className="navbar navbar-expand-lg fixed-top">
         <div className="container-fluid">
-          <a className="navbar-brand" href="/">
+          <a className="navbar-brand" href="/academia-ajedrez">
             <img
               src={hermarLogo}
               width="210"
@@ -37,34 +37,34 @@ export default function Navbar() {
 
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="/sobre-hermar">
+                  <a className="nav-link active" aria-current="page" href="academia-ajedrez/sobre-hermar">
                     Sobre la academia
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link active" href="#beneficios" /* onClick={scrollToBeneficios} */>
+                  <a className="nav-link active" href="academia-ajedrez/sobre-hermar#beneficios" /* onClick={scrollToBeneficios} */>
                     Beneficios del Ajedrez
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="/planes">
+                  <a className="nav-link active" aria-current="page" href="academia-ajedrez/planes">
                     Planes
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link active" href="#testimonios" /* onClick={scrollToTestimonios} */>
+                  <a className="nav-link active" href="academia-ajedrez#testimonios" /* onClick={scrollToTestimonios} */>
                     Testimonios
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link active" href="/faq">
+                  <a className="nav-link active" href="academia-ajedrez/faq">
                     Preguntas Frecuentes
                   </a>
                 </li>
               </ul>
 
             <div className="contactar">
-              <a className="btn btn-outline navbar-contactar" type="submit" href="/contactar">
+              <a className="btn btn-outline navbar-contactar" type="submit" href="academia-ajedrez/contactar">
                 CONTACTAR
               </a>
             </div>
