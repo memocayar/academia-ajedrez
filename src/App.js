@@ -18,12 +18,12 @@ import PlanesPage from "./componentes/planes/PlanesPage";
 export default function App() {
   return (
     <div className="App">
-      <Navbar />
-      <WhatsAppButton />
-      <Router>
+      <Router basename="/academia-ajedrez">
+        <Navbar />
+        <WhatsAppButton />
         <Routes>
           <Route
-            path="academia-ajedrez/"
+            path="/"
             element={
               <>
                 <div className="page">
@@ -39,7 +39,7 @@ export default function App() {
             }
           />
           <Route
-            path="academia-ajedrez/sobre-hermar"
+            path="/sobre-hermar"
             element={
               <>
                 <div className="page">
@@ -49,7 +49,7 @@ export default function App() {
             }
           />
           <Route
-            path="academia-ajedrez/beneficios"
+            path="/beneficios"
             element={
               <>
                 <div className="page"></div>
@@ -57,7 +57,7 @@ export default function App() {
             }
           />
           <Route
-            path="academia-ajedrez/planes"
+            path="/planes"
             element={
               <>
                 <div className="page">
@@ -67,7 +67,7 @@ export default function App() {
             }
           />
           <Route
-            path="academia-ajedrez/testimonios"
+            path="/testimonios"
             element={
               <>
                 <div className="page"></div>
@@ -75,29 +75,28 @@ export default function App() {
             }
           />
           <Route
-            path="academia-ajedrez/faq"
+            path="/faq"
             element={
               <>
                 <div className="page">
-                  <FullFAQ  />
+                  <FullFAQ />
                 </div>
               </>
             }
           />
           <Route
-            path="academia-ajedrez/contactar"
+            path="/contactar"
             element={
               <>
                 <div className="page">
-                  <Contacto/>
+                  <Contacto />
                 </div>
               </>
             }
           />
         </Routes>
+        <Footer />
       </Router>
-
-      <Footer />
     </div>
   );
 }
