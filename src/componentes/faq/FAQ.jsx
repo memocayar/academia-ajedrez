@@ -37,7 +37,7 @@ export default function FAQ() {
         ))}
       </div>
 
-      <a href="/FAQ" className="btn btn-outline-secondary" id="faq-button">
+      <a href="/academia-ajedrez/faq" className="btn btn-outline-secondary" id="faq-button">
         VER MÁS
       </a>
     </div>

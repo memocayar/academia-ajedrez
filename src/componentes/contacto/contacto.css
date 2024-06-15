@@ -1,8 +1,5 @@
-#contenedor {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* Single column */
-  grid-template-rows: none;
-  gap: 1rem; /* Gap between elements */
+.contacto-page-faq{
+  margin-top: 5rem;
 }
 
 body {
@@ -10,19 +7,25 @@ body {
 }
 
 .contacto-contenedor {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Single column */
+  grid-template-rows: none;
+  gap: 1rem; /* Gap between elements */
   align-items: center;
   background-image: url("../../img/tablero.png");
   background-position: right;
   background-repeat: no-repeat;
   background-size: auto 100%;
+  margin-bottom: 0 !important;
 }
 
-#titulo {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #000000;
-  font-family: "Titillium Web";
-  margin-top: 4vw;
+.contacto-textos{
+  margin-left: 10vw;
+}
+
+#contacto-titulo{
+  margin-top: 2rem;
+  text-align: left !important;
 }
 
 #formulario,

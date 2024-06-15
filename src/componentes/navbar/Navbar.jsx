@@ -1,14 +1,30 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import "./navbar.css";
 import hermarLogo from "../../img/logo-hermar-azul.png";
 
-export default function Navbar() { 
+// Función personalizada de desplazamiento
+const scrollWithOffset = (el) => {
+  const yOffset = -window.innerHeight / 2 + el.getBoundingClientRect().height / 2;
+  const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+  window.scrollTo({ top: y, behavior: 'smooth' });
+};
+
+export default function Navbar() {
+  const location = useLocation();
+
+  const handleLogoClick = () => {
+    if (location.pathname === "/") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="my-navbar">
       <nav className="navbar navbar-expand-lg fixed-top">
         <div className="container-fluid">
-          <Link className="navbar-brand" to="/">
+          <Link className="navbar-brand" to="/" onClick={handleLogoClick}>
             <img
               src={hermarLogo}
               width="210"
@@ -35,9 +51,13 @@ export default function Navbar() {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link active" to="/beneficios">
+                <HashLink 
+                  className="nav-link active" 
+                  to="/sobre-hermar#beneficios"
+                  scroll={el => scrollWithOffset(el)}
+                >
                   Beneficios del Ajedrez
-                </Link>
+                </HashLink>
               </li>
               <li className="nav-item">
                 <Link className="nav-link active" to="/planes">
@@ -45,9 +65,13 @@ export default function Navbar() {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link active" to="#testimonios">
+                <HashLink 
+                  className="nav-link active" 
+                  to="/#testimonios"
+                  scroll={el => scrollWithOffset(el)}
+                >
                   Testimonios
-                </Link>
+                </HashLink>
               </li>
               <li className="nav-item">
                 <Link className="nav-link active" to="/faq">

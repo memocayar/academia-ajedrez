@@ -1,4 +1,5 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import React, { useEffect } from "react";
+import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
 import "./App.css";
 import Banner from "./componentes/banner/Banner";
 import ClaseDiagnostico from "./componentes/claseDiagnostico/ClaseDiagnostico";
@@ -14,11 +15,36 @@ import WhatsAppButton from "./componentes/whatsapp";
 import SobreHermar from "./componentes/sobre-hermar/SobreHermar";
 import Contacto from "./componentes/contacto/Contacto";
 import PlanesPage from "./componentes/planes/PlanesPage";
+import ContactoPage from "./componentes/contacto/ContactoPage";
+
+const ScrollToTop = () => {
+  const { pathname, hash } = useLocation();
+
+  useEffect(() => {
+    if (!hash) {
+      window.scrollTo(0, 0);
+    }
+  }, [pathname, hash]);
+
+  useEffect(() => {
+    if (hash) {
+      const element = document.querySelector(hash);
+      if (element) {
+        const yOffset = -window.innerHeight / 2 + element.getBoundingClientRect().height / 2;
+        const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({ top: y, behavior: "smooth" });
+      }
+    }
+  }, [hash]);
+
+  return null;
+};
 
 export default function App() {
   return (
     <div className="App">
       <Router basename="/academia-ajedrez">
+        <ScrollToTop />
         <Navbar />
         <WhatsAppButton />
         <Routes>
@@ -49,28 +75,12 @@ export default function App() {
             }
           />
           <Route
-            path="/beneficios"
-            element={
-              <>
-                <div className="page"></div>
-              </>
-            }
-          />
-          <Route
             path="/planes"
             element={
               <>
                 <div className="page">
                   <PlanesPage />
                 </div>
-              </>
-            }
-          />
-          <Route
-            path="/testimonios"
-            element={
-              <>
-                <div className="page"></div>
               </>
             }
           />
@@ -89,7 +99,7 @@ export default function App() {
             element={
               <>
                 <div className="page">
-                  <Contacto />
+                  <ContactoPage />
                 </div>
               </>
             }

@@ -13,22 +13,6 @@ export default function Instructores() {
         </h1>
         <div className="instructores">
           <Instructor
-            name="Juan Miguel Marson"
-            title="Instructor de Ajedrez certificado por FIDE"
-            description={[
-              "Candidato a Maestro (2020).",
-              "Campeón Provincial Absoluto (Córdoba, 2016).\n",
-              "Campeón Argentino Cat. 2000 & Subcampeón Argentino Cat. 2000 en modalidad Blitz (Buenos Aires, 2016).",
-              "Medalla de Bronce Panamericano Cat. 2300 (Costa Rica, 2019).",
-              "Representante de Argentina en Mundial Cat. 2300 (Italia, 2019) obteniendo medalla de bronce en modalidad Blitz.",
-              "6 años de experiencia como entrenador, trabajando con jóvenes promesas del ajedrez local, provincial, nacional e internacional.",
-            ]}
-            fide="https://ratings.fide.com/profile/106585"
-            lichess="https://lichess.org/coach/chessmarson"
-            foto={Juan}
-          />
-
-          <Instructor
             name="Roman Herrmann"
             title="Instructor de Ajedrez certificado por FIDE"
             description={[
@@ -42,6 +26,22 @@ export default function Instructores() {
             fide="https://ratings.fide.com/profile/143499"
             lichess="https://lichess.org/coach/Nuvox"
             foto={Roman}
+          />
+
+          <Instructor
+            name="Juan Miguel Marson"
+            title="Instructor de Ajedrez certificado por FIDE"
+            description={[
+              "Candidato a Maestro (2020).",
+              "Campeón Provincial Absoluto (Córdoba, 2016).\n",
+              "Campeón Argentino Cat. 2000 & Subcampeón Argentino Cat. 2000 en modalidad Blitz (Buenos Aires, 2016).",
+              "Medalla de Bronce Panamericano Cat. 2300 (Costa Rica, 2019).",
+              "Representante de Argentina en Mundial Cat. 2300 (Italia, 2019) obteniendo medalla de bronce en modalidad Blitz.",
+              "6 años de experiencia como entrenador, trabajando con jóvenes promesas del ajedrez local, provincial, nacional e internacional.",
+            ]}
+            fide="https://ratings.fide.com/profile/106585"
+            lichess="https://lichess.org/coach/chessmarson"
+            foto={Juan}
           />
         </div>
       </div>

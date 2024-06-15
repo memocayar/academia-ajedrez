@@ -1,33 +1,38 @@
-.planesPage-textos{
-    text-align: start;
-    margin-top: 2rem;
+.planesPage-textos {
+  text-align: start;
+  margin-top: 2rem;
 }
 
-.promociones{
-    margin-top: 4rem;
+.promociones {
+  margin-top: 4rem;
 }
 
-#planesPage-title{
-    text-align: start;
+#planesPage-title {
+  text-align: start;
 }
 
-.table{
-    margin-top: 3rem;
-    border: transparent !important;
+.table {
+  margin-top: 3rem;
+  border: transparent !important;
 }
 
-.tabla-titulos{
-    color: #7C91BE !important; 
-    font-size: 28px;
-    font-weight: 500 !important;
+.tabla-titulos {
+  color: #7c91be !important;
+  font-size: 28px;
+  font-weight: 500 !important;
 }
 
-.tabla-titulos-fila{
-    color: black !important; 
-    font-weight: 600 !important;
-    text-align: start;
-}	
+.tabla-titulos-fila {
+  color: black !important;
+  font-weight: 600 !important;
+  text-align: start;
+}
 
-td{
-max-width: 20rem;
-}	
+td {
+  max-width: 20rem;
+}
+
+.planes-saber-mas {
+  margin-top: 5rem !important;
+  width: 100% !important;
+}
