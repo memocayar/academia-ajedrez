@@ -1,5 +1,6 @@
 import React from "react";
 import "./planesPage.css";
+import { Link } from "react-router-dom";
 
 export default function PlanesPage() {
   return (
@@ -15,7 +16,7 @@ export default function PlanesPage() {
           <tr>
             <th scope="col"></th>
             <th className="tabla-titulos" scope="col">
-              Clases de Iniciacion
+              Clases Iniciacion
             </th>
             <th className="tabla-titulos" scope="col">
               Clases Individuales
@@ -124,9 +125,9 @@ export default function PlanesPage() {
           >
             <button id="botonagendar">Agendar Clase</button>
           </a>
-          <a href="/contactar">
+          <Link to="/contactar">
             <button id="botonclase">Contactanos</button>
-          </a>
+          </Link>
         </div>
       </div>
     </div>

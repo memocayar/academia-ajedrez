@@ -43,7 +43,7 @@ const ScrollToTop = () => {
 export default function App() {
   return (
     <div className="App">
-      <Router basename="/academia-ajedrez">
+      <Router basename="/">
         <ScrollToTop />
         <Navbar />
         <WhatsAppButton />
