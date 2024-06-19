@@ -1,5 +1,6 @@
 import React from "react";
 import "./planesPage.css";
+import { Link } from "react-router-dom";
 
 export default function PlanesPage() {
   return (
@@ -15,7 +16,7 @@ export default function PlanesPage() {
           <tr>
             <th scope="col"></th>
             <th className="tabla-titulos" scope="col">
-              Clases de Iniciacion
+              Clases Iniciacion
             </th>
             <th className="tabla-titulos" scope="col">
               Clases Individuales
@@ -30,24 +31,28 @@ export default function PlanesPage() {
             <th scope="row" className="tabla-titulos-fila">
               Público Objetivo
             </th>
-            <td>Principiantes sin conocimientos previos</td>
             <td>
-              Personas con conocimientos previos, de cualquier nivel o edad
+              Personas sin conocimientos previos que quieran aprender desde cero
             </td>
             <td>
-              Personas de cualquier nivel, desde principiantes hasta con
-              experiencia
+              Personas con conocimientos previos, todas las edades y niveles
+            </td>
+            <td>
+              Personas con conocimientos previos, todas las edades y niveles.
             </td>
           </tr>
           <tr>
             <th scope="row" className="tabla-titulos-fila">
               Contenido
             </th>
-            <td>Reconocimiento del tablero y piezas, estrategias básicas</td>
-            <td>Material de estudio, ejercicios, seguimiento personalizado</td>
             <td>
-              Entrenamiento completo en aperturas, mediojuego, final, táctica,
-              estrategia, técnica
+              Reconociendo el tablero, las piezas y sus movimientos, estrategias
+              básicas, fases de una partida
+            </td>
+            <td>Personalizado según el nivel y objetivos del alumno.</td>
+            <td>
+              Entrenamiento específico en aperturas, estrategia y finales.
+              Consultar por los grupos del mes y los temas de estudio
             </td>
           </tr>
           <tr>
@@ -55,16 +60,16 @@ export default function PlanesPage() {
               Cantidad de clases
             </th>
             <td>4 clases en vivo</td>
-            <td>Personalizado</td>
-            <td>12 clases en vivo</td>
+            <td>Personalizado, a elección del alumno</td>
+            <td>4 clases en vivo (con grabación)</td>
           </tr>
           <tr>
             <th scope="row" className="tabla-titulos-fila">
               Duración de la clase
             </th>
-            <td>50-60 minutos</td>
-            <td>Personalizado</td>
-            <td>45-60 minutos</td>
+            <td>50 minutos</td>
+            <td>Entre 50 y 60 minutos</td>
+            <td>Entre 40 y 50 minutos</td>
           </tr>
           <tr>
             <th scope="row" className="tabla-titulos-fila">
@@ -76,52 +81,54 @@ export default function PlanesPage() {
           </tr>
           <tr>
             <th scope="row" className="tabla-titulos-fila">
-              Precio (UDS - Wise, Binance, Criptomonedas)
+              Seguimiento permanente
+            </th>
+            <td>❌</td>
+            <td>✅</td>
+            <td>❌</td>
+          </tr>
+          <tr>
+            <th scope="row" className="tabla-titulos-fila">
+              Precio (UDS - Wise, Binance)
             </th>
             <td>$44</td>
-            <td>$12</td>
-            <td>$45</td>
+            <td>$13</td>
+            <td>$40</td>
           </tr>
           <tr>
             <th scope="row" className="tabla-titulos-fila">
               Precio (USD - PayPal)
             </th>
             <td>$48</td>
-            <td>$13</td>
-            <td>$50</td>
+            <td>$14</td>
+            <td>$44</td>
           </tr>
           <tr>
             <th scope="row" className="tabla-titulos-fila">
               Precio (ARS)
             </th>
-            <td>$18,000</td>
-            <td>$6,000</td>
-            <td>$25,000</td>
-          </tr>
-          <tr>
-            <th scope="row" className="tabla-titulos-fila"></th>
-            <td>
-              {" "}
-              <button id="botonclase">Elegir plan</button>
-            </td>
-            <td>
-              <button id="botonclase">Elegir plan</button>
-            </td>
-            <td>
-              <button id="botonclase">Elegir plan</button>
-            </td>
+            <td>$24.000</td>
+            <td>$6.000</td>
+            <td>$20.000</td>
           </tr>
         </tbody>
       </table>
-
-      <div className="planesPage-textos promociones">
-        <p>
-          <strong>Promociones</strong>
-        </p>
-        <p>
-          4 clases: $44 (Wise, Binance, Cripto), $48 (PayPal); 8 clases: $84
-          (Wise, Binance, Cripto), $90 (PayPal)
-        </p>
+      <div id="clase" className="planes-saber-mas">
+        <div id="textosclase">
+          <h2 className="titulos-secciones">¿Te gustaría saber mas?</h2>
+          <p id="parrafoclase">Agenda una clase gratuita con nosotros.</p>
+        </div>
+        <div id="contenedor botones">
+          <a
+            target="_blank"
+            href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3JLJ77pse8lY0-mnwwnhjg2a_twy__UVDMbiUDksOz4rlvx-cP4VyX-ShtlxO9JD1WVLOXS0jF"
+          >
+            <button id="botonagendar">Agendar Clase</button>
+          </a>
+          <Link to="/contactar">
+            <button id="botonclase">Contactanos</button>
+          </Link>
+        </div>
       </div>
     </div>
   );

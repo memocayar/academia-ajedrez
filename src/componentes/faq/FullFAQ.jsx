@@ -1,6 +1,7 @@
 import React from "react";
 import AcordionItem from "./AcordionItem";
 import "./fullfaqclase.css";
+import { Link } from "react-router-dom";
 
 export default function FullFAQ() {
   const faqData = [
@@ -109,9 +110,9 @@ export default function FullFAQ() {
           >
             <button id="botonagendar">Agendar Clase</button>
           </a>
-          <a href="/contactar">
+          <Link to="/contactar">
             <button id="botonclase">Contactanos</button>
-          </a>
+          </Link>
         </div>
       </div>
     </div>

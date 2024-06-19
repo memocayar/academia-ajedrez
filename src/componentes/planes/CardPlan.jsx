@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
+import { Link } from "react-router-dom";
 
 export default function CardPlan({ title, description, items }) {
   return (
@@ -11,11 +12,11 @@ export default function CardPlan({ title, description, items }) {
         {items.map((item, index) => (
           <CardPlanItem key={index} text={item} />
         ))}
-        <a href="/planes">
+        <Link to="/planes">
           <Button variant="primary" size="lg" className="plan-button">
             Ver Más
           </Button>
-        </a>
+        </Link>
       </Card.Body>
     </Card>
   );

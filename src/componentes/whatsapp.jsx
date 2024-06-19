@@ -17,7 +17,7 @@ export default function WhatsAppButton() {
 
   return (
     <div style={buttonStyle}>
-      <a href='https://wa.link/cuanak' target="_blank">
+      <a href='https://walink.co/5cfa2e' target="_blank">
         <img src={whatsAppIcon} alt="whatsapp"   style={imageStyle} />
       </a>
     </div>

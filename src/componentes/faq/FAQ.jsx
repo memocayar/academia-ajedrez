@@ -1,6 +1,7 @@
 import React from "react";
 import AcordionItem from "./AcordionItem";
 import "./faq.css";
+import { Link } from "react-router-dom";
 
 const faqData = [
   {
@@ -37,9 +38,9 @@ export default function FAQ() {
         ))}
       </div>
 
-      <a href="/FAQ" className="btn btn-outline-secondary" id="faq-button">
+      <Link to="/faq" className="btn btn-outline-secondary" id="faq-button">
         VER MÁS
-      </a>
+      </Link>
     </div>
   );
 }

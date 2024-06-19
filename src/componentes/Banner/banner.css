@@ -1,72 +1,67 @@
-#contenedor {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-template-rows: auto;
-  height: 50vh;
+#banner-contenedor {
+  align-items: center;
+  height: 45vh;
+  max-height: 30rem;
+  background-image: url("./tablero.png");
+  background-position: right;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-#textos {
-  justify-self: center;
-  align-self: center;
-  margin-left: 5em;
+#banner-textos {
+  margin: 5rem;
+  text-align: start;
 }
 
-#titulo {
-  color: #000;
-  font-family: "Titillium Web";
-  font-size: 2em;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 2px;
-  margin-bottom: 10px;
+#banner-titulo {
+  font-size: 2.5em;
+  font-weight: bolder;
 }
 
-#parrafo {
-  color: #67696B;
-  font-family: "Titillium Web";
+#banner-subtitulo {
   font-size: 1.5em;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.5; /* 150% */
+  color: #67696b;
 }
 
-#contenedorImagen {
-  display: flex;
-  justify-content: flex-end;
-
-}
-
-#imagen {
-width: 100%;
-max-width: 50rem;
-height: auto;
-}
-
-@media screen and (max-width: 767px) {
-  #contenedor {
-    grid-template-columns: 1fr; /* Cambiar a una sola columna */
+@media (max-width: 853px) {
+  #banner-contenedor {
+    background-image: url("");
+    max-height: 20rem;
+    padding-right: 0;
   }
-
-  #textos {
-    margin: 1em; /* Reducir el margen */
-    text-align: center; /* Centrar el texto */
-  }
-
-  #contenedorImagen {
-    justify-content: center; /* Centrar la imagen */
-  }
-
-  #imagen {
-    display: none; /* Ocultar la imagen en pantallas pequeñas */
-  }
-}
-
-@media screen and (min-width: 1500px) {
-  #textos {
-    /* tus estilos existentes */
+  #banner-textos {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 2rem;
     width: 100%;
-    font-size: 1.3em;
-    margin-left: 10vw;
+  }
+  
+}
+
+@media (max-width: 1200px) {
+  #banner-contenedor {
+    height: auto;
+  }
+}
+
+@media (min-width: 2560px) {
+  #banner-titulo {
+    font-size: 3.5em;
+  }
+  #banner-subtitulo {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 853px) {
+  #banner-textos {
+    margin-top: 0.3rem;
   }
 }
