@@ -83,13 +83,13 @@ export default function PlanesPage() {
             <th scope="row" className="tabla-titulos-fila">
               Seguimiento permanente
             </th>
-            <td>❌</td>
             <td>✅</td>
-            <td>❌</td>
+            <td>✅</td>
+            <td>✅</td>
           </tr>
           <tr>
             <th scope="row" className="tabla-titulos-fila">
-              Precio (UDS - Wise, Binance)
+              Precio (USD - Wise, Binance)
             </th>
             <td>$44</td>
             <td>$13</td>

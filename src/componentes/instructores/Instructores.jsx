@@ -24,7 +24,7 @@ export default function Instructores() {
               "5 años de experiencia como entrenador, trabajando con jóvenes promesas del ajedrez local, provincial, nacional e internacional.",
             ]}
             fide="https://ratings.fide.com/profile/143499"
-            lichess="https://lichess.org/@/Roman_Herrmann"
+            lichess="https://lichess.org/coach/roman_herrmann"
             foto={Roman}
           />
 

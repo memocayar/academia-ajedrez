@@ -58,3 +58,22 @@ p{
     max-height: 350px;
   }
 }
+
+@media (max-width: 530px) {
+  .beneficios-item-body {
+    margin-left: 3em;
+  }
+}
+@media (max-width: 415px) {
+  .beneficios-item-body {
+    margin-left: 2em;
+  }
+  .beneficios-circle {
+    width: 100px;
+    height: 100px;
+  }
+  .beneficios-item-icon {
+    max-width: 60px;
+    max-height: 60px;
+  }
+}

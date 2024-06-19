@@ -80,13 +80,10 @@ export default function SobreHermar() {
           <div className="sobreHermar-texto">
             <h2 className="sobreHermar-texto-title">¿Qué obtendrás en nuestras sesiones?</h2>
             <p className="sobreHermar-texto-body">
-              ✔️ Soporte entre las clases (si tiene alguna pregunta o duda, me
-              envía un mensaje por aquí o WhatsApp en cualquier momento).
-              Siempre estoy haciendo todo lo posible para ser muy receptivo.
+              ✔️ Soporte entre las clases (si tiene alguna pregunta o duda, nos envía un mensaje por la plataforma o a través de WhatsApp en cualquier momento). Siempre hacemos todo lo posible para ser muy receptivos.
               <br />
               <br />
-              ✔️ Plan de estudio acorde a tu nivel y tus objetivos, con mi
-              seguimiento 100% personalizado.
+              ✔️ Plan de estudio acorde a tu nivel y tus objetivos, con nuestro seguimiento 100% personalizado.
               <br />
               <br />
               ✔️ Tareas semanales y mensuales relacionadas con nuestra
@@ -94,7 +91,7 @@ export default function SobreHermar() {
               aplicar y aumentar aún más su conocimiento.
               <br />
               <br />
-              ✔️ Uso de herramientas modernas (bases de datos, archivos PNG).
+              ✔️ Uso de herramientas modernas (bases de datos, archivos PGN).
             </p>
           </div>
         </div>
