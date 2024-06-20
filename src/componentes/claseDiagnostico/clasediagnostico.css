@@ -56,9 +56,9 @@
 }
 
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   #botonclase {
-    width: 80%; /* El ancho del botón ocupará todo el ancho disponible en pantallas pequeñas */
+    
     max-width: 280px; /* Ancho máximo del botón */
   }
 }
